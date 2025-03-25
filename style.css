@@ -1,0 +1,178 @@
+
+:root {
+
+    --lightblue:#68b1ff;
+    --white:#fdfdfd; 
+}
+
+/* Yleinen tyylitiedosto */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--lightblue);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Varmistaa, että sivu vie koko näytön korkeuden */
+}
+
+/* Yläreunan palkki */
+.header {
+    background-image: url('tiili.jpg'); /* Korvaa oikealla kuvan polulla */
+    background-size: cover; /* Skaalaa kuvan täyttämään headerin */
+    background-position: center; /* Asettaa kuvan keskelle */
+    background-repeat: no-repeat; /* Estää kuvan toistumisen */
+    color: rgb(0, 0, 0);
+    padding: 30px 50px;
+    display: flex
+    justify-content: flex-start;S
+    align-items: center;
+}
+
+/* Header vasemman puolen teksti */
+.header .left {
+    font-size: 20px;
+
+}
+
+.header .right {
+    display: flex;
+    justify-content: center; /* Keskittää linkit vaakasuunnassa */
+    align-items: center;     /* Keskittää linkit pystysuunnassa */
+    gap: 20px;  
+    f     
+}
+
+/* Header oikean puolen linkit */
+.header .right a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 22px; /* Kasvatettu fonttikoko */
+}
+
+.header .right a:hover {
+    text-decoration: none;
+}
+
+/* Pääsisältö */
+.main-content {
+    padding: 2%;
+    display: flex;
+}
+
+div.main-content{
+    text-align: center;   
+}
+
+/* Naamakuva tyyli */
+.face-image {
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
+    margin-right:20px;
+}
+
+/* logojen tyyli */
+.logo-image {
+    width: 200px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.main-content .text {
+    flex: 2;
+    color: rgb(0, 0, 0)
+
+}
+
+/* Kaksi saraketta */
+.columns {
+    display: flex;
+    padding: 20px;
+}
+
+.columns .column {
+    flex: 1;
+}
+
+/* Alareunan palkki */
+.footer {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto; /* Tämä varmistaa, että palkki menee alas */
+}
+
+/* Alimman palkin kuvat */
+.footer .images {
+    gap: 10px;
+    vertical-align: middle;
+}
+
+
+/* Teksti alimman palkin oikealla puolella */
+.footer .text {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    gap: 20px;
+    color: rgb(0, 9, 139);
+    
+}
+
+/* Tekstit vierekkäin */
+.footer .text p {
+    margin: 0;
+    align-self: flex-end;
+}
+ul. {
+    list style: none;
+}
+ul.bottom-info {
+    list-style: none;
+    font-size: 16px;      /* Isompi fonttikoko */
+    line-height: 1.2;     /* Lisää riviväliä */
+    padding: 0;           /* Poistaa oletustäytteet */
+    margin: 0;            /* Poistaa oletusmarginaalit */
+    padding-left: 25px;   /* Lisää tilaa vasemmalta */
+}
+
+ul.bottom-info li {
+    margin-bottom: 10px;  /* Lisää tilaa listan kohteiden väliin */
+}
+
+a {
+    color: #3498db; /* Linkin väri */
+    text-decoration: none; /* Poistetaan alleviivaus */
+    padding: 20px;
+    
+}
+
+a:hover {
+    color: #e74c3c; /* Väri muuttuu */
+    text-decoration: underline; /* Alaviiva näkyviin */
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: 22px; /* Kasvatettu fonttikoko */
+}
+
+
+.scrollable-box {
+    width: 100%;          /* Voit asettaa sopivan leveyden */
+    max-width: auto;     /* Esimerkiksi enintään 600px leveä */
+    height: 280px;        /* Kiinteä korkeus */
+    overflow-y: auto;     /* Näyttää pystysuoran rullapalkin tarpeen mukaan */
+    padding: 10px;        /* Sisäistä tilaa tekstille */
+    border: 1px solid #ccc; /* Kehyksen väri */
+    background-color: #fff; /* Taustaväri */
+}
