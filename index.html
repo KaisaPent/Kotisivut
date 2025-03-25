@@ -3,70 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yrityksen Kotisivut</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            max-width: 1000px;
-            display: flex;
-            background: white;
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .main-content {
-            flex: 3;
-            padding-right: 20px;
-        }
-        .sidebar {
-            flex: 1;
-            background: #eee;
-            padding: 15px;
-            border-left: 3px solid #ccc;
-        }
-        .box {
-            background: #ddd;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-        }
-        h1 {
-            text-align: center;
-        }
-        .link {
-            color: #0066cc;
-            text-decoration: none;
-        }
-    </style>
+    <title>Etusivu</title>
+    <!-- Linkki ulkoiseen CSS-tiedostoon -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="main-content">
-            <h1>Yrityksen Nimi</h1>
-            <div class="box">
-                <h2>Tietoa Meistä</h2>
-                <p>Tähän voit kirjoittaa yrityksesi esittelyn ja toimintanne kuvauksen.</p>
-                <p><a href="toinensivu.html" class="link">Lue lisää yrityksestämme</a></p> <!-- Linkki toiseen sivuun -->
-            </div>
-            <div class="box">
-                <h2>Palvelumme</h2>
-                <p>Kuvaile tässä tarjoamianne palveluita ja tuotteita.</p>
-            </div>
-        </div>
-        <div class="sidebar">
-            <h2>Yhteystiedot</h2>
-            <p><strong>Yrityksen nimi</strong></p>
-            <p>Osoite, Kaupunki</p>
-            <p>Puhelin: 012-3456789</p>
-            <p>Sähköposti: info@yritys.fi</p>
+
+    <!-- Yläreunan palkki -->
+    <div class="header">
+        <div class="left"></div>
+        <div class="right">
+            <li><a href="index.html">Kotisivu</a></li>
+            <li><a href="page1.html">Puheterapia</a></li>
+            <li><a href="page2.html">Lisäkoulutukseni</a></li>
         </div>
     </div>
+
+    <!-- Pääsisältö -->
+    <div class="main-content">
+        <div class="image">
+            <img src="k1.jpg" alt="Kuva" class="face-image">
+        </div>
+        <div class="text">
+            <h1>T:mi Puheterapeutti Kaisa Penttilä</h1>
+            <p>
+                Olen koulutukseltani Filosofian maisteri. Olen valmistunut Oulun yliopistosta, logopedian
+                koulutusohjelmasta vuonna 2005. Lisäksi olen sisätautikirurginen sairaanhoitaja,
+                valmistunut Oulun Ammattikorkeakoulusta vuonna 1996. Olen työskennellyt
+                puheterapeuttina noin 20 vuotta. Toimin yksityisenä ammatinharjoittajana.
+            </p>
+            <p>   
+                Erityisosaamisalueitani ovat puhetta tukevien – ja korvaavien kommunikointimenetelmien
+                käytön ohjaaminen ja kommunikointisovellusten sisällön muokkaaminen, varhaisen
+                vuorovaikutuksen ongelmat, viivästynyt puheen- ja kielenkehitys, puheen- ja
+                kielenkehityksen erityisvaikeus, artikulaatiovaikeudet ja äännevirheet, kehitysvammaan
+                liittyvät puheen-, kielen- ja kommunikaation erilaiset haasteet, neurologisten sairauksien
+                tai aivovamman aiheuttamat puheen ongelmat ja neuropsykiatriset häiriöt.
+            </p>
+            <p>    
+                Teen työtä vahvan ammattitaidon pohjalta asiakaslähtöisesti jokaista asiakasta ja hänen
+                läheisiään kunnioittaen ja jokaisen elämäntilanteen huomioon ottaen. Lisäksi
+                puheterapeuttina työtäni ohjaavat terveydenhuoltoa koskevat lait- ja asetukset, Kelan
+                standardi ja säännöllinen työni laadun arviointi. Osaamistani puheterapeuttina olen
+                halunnut kehittää koko työurani ajan ja olen käynyt lukuisia puheterapia-alan
+                lisäkoulutuksia. Alla esimerkkejä käymistäni lisäkoulutuksista:
+            </p>
+
+        </div>
+    </div>
+
+    <!-- Kaksi saraketta -->
+    <div class="columns">
+        <div class="column">
+            <h2>Puheterapia asiakkaat</h2>
+            <p>
+                Kuntoutan Kelan vaativan lääkinnällisen kuntoutuksen puheterapia-asiakkaita,
+                perusterveydenhuollon asiakkaita sekä itse kuntoutuksen maksavia asiakkaita ja
+                vakuutusyhtiön kautta tulevia asiakkaita. Puheterapiakuntoutus toteutetaan asiakkaan
+                toiveiden ja tarpeiden mukaan joko vastaanotolla tai kotikäynteinä asiakkaan kotona,
+                lapsen päiväkodissa, lapsen ja nuoren koulussa tai tuetuissa asumisyksiöissä.
+            </p>
+            <p>   
+                Toiminta-alue: Oulu, Ii, Muhos, Utajärvi, Tyrnävä, Kempele, Liminka, Lumijoki, Siikalatva,
+                Kärsämäki, Pyhäjärvi, Haapajärvi, Nivala, Haapavesi, Ylivieska, Oulainen
+            </p>
+            <p>
+                Paikkatilanne: Tällä hetkellä mahtuu asiakkaita (päivitetty 7.3.2025)
+            </p>
+        </div>
+        <div class="column">
+            <h2>Lisäkoulutukset</h2>
+            <div class="scrollable-box">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Alareunan palkki -->
+    <div class="footer">
+        <div class="images">
+            <img src="kela.png" alt="Kuva 2" class="logo-image">
+            <img src="pohde.png" alt="Kuva 1" class="logo-image">
+        </div>
+        <div class="text">
+            <ul class="bottom-info">
+                <li>0409673178 löpölöpö@gmail.com</li>
+                <li>Käyntiosoite: Vanhantullinkatu 2, 2 krs. ,90100 Oulu</li>
+                
+                <li>Paikkatilanne: Tällä hetkellä mahtuu asiakkaita (päivitetty 7.3.2025)</li>
+            </ul>
+            <p><a href="tietoturva.pdf" target="_blank">Tietoturvakausiseloste</a></p>
+        </div>
+    </div>
+
 </body>
 </html>
