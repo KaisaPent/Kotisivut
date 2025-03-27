@@ -145,6 +145,10 @@ div.esittely2{
     color: rgb(0, 0, 0)
 }
 
+.esittely2 .text li {
+    list-style: none;
+    font-size: 22px;
+}
 
 /* Kaksi saraketta */
 .columns {
@@ -156,8 +160,6 @@ div.esittely2{
 .columns .column {
     flex: 1;
 }
-
-
 
 
 
@@ -409,7 +411,9 @@ p {
         display: none;
     }
 
-    
+    .columns{
+        display: none;
+    }
 
 }
 
@@ -454,7 +458,7 @@ p {
     max-width: 480px;
     margin: auto;
     background-color: #555;
-    height: 500px;
+    height: 400px;
     color: white;
     border-radius: 10px;
   }
@@ -471,14 +475,13 @@ p {
 
   .topnav p {
     text-align: center;  
-    font-size: 26px;     
+    font-size: 16px;     
     font-weight: bold;    
     margin: 10px 0;      
   }
   
   .topnav a {
-    color: rgb(0, 0, 0);
-    padding: 14px 16px;
+    color: rgb(0, 0, 0);    
     text-decoration: none;
     font-size: 17px;
     display: block;
