@@ -314,7 +314,6 @@ ul.security-info li{
 a {
     color: #3498db; /* Linkin väri */
     text-decoration: none; /* Poistetaan alleviivaus */
-    padding: 20px;
     
 }
 
@@ -327,7 +326,7 @@ a:hover {
     color: #000000; 
     text-decoration: underline; 
     font-size: 20px;
-    margin: left 20px;
+    
     
 }
 
