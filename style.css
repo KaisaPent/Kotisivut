@@ -16,9 +16,18 @@ body {
     min-height: 100vh; /* Varmistaa, että sivu vie koko näytön korkeuden */
 }
 
-/* Yläreunan palkki */
+
+
+
+
+
+
+/*------------------------------------------------------*/
+/*                      HEADER                          */
+/*------------------------------------------------------*/
+
 .header {
-    background-image: url('tiili.jpg'); /* Korvaa oikealla kuvan polulla */
+    background-image: url('aalto.jpg'); /* Korvaa oikealla kuvan polulla */
     background-size: cover; /* Skaalaa kuvan täyttämään headerin */
     background-position: center; /* Asettaa kuvan keskelle */
     background-repeat: no-repeat; /* Estää kuvan toistumisen */
@@ -56,15 +65,30 @@ body {
     text-decoration: none;
 }
 
-/* Pääsisältö */
-.main-content {
-    padding: 2%;
-    display: flex;
+.header .right li {
+    list-style: none; /* Varmistaa, että yksittäiset `<li>`-elementit eivät näytä bulletteja */
+    
 }
 
-div.main-content{
-    text-align: center;   
+.hamburger-menu {
+    flex-direction: column;
+    cursor: pointer;
 }
+
+.hamburger-menu span {
+    background: black;
+    width: 30px;
+    height: 4px;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+
+/*------------------------------------------------------*/
+/*                      SISÄLLÖT                        */
+/*------------------------------------------------------*/
+
+/*--------etusivu---------*/
 
 /* Naamakuva tyyli */
 .face-image {
@@ -74,30 +98,122 @@ div.main-content{
     margin-right:20px;
 }
 
-/* logojen tyyli */
-.logo-image {
-    width: 200px;
+.face-image-mobile {
+    width: 250px;
     height: auto;
-    vertical-align: middle;
+    margin-top: 20px;
+    margin-right:20px;
+    display: block; /* Makes the image a block-level element */
+    margin: 0 auto; /* Centers the image horizontally */
+    
 }
 
-.main-content .text {
+/* Wrapper for content to limit width */
+.content-wrapper {
+    max-width: 1100px;
+    margin: 0 auto; /* Centers the content horizontally */
+    padding: 0 20px; /* Optional: adds padding on the left and right for better spacing */
+}
+
+
+.esittely {
+    padding: 2%;
+    display: flex;
+}
+
+div.esittely{
+    text-align: left;  
+}
+
+.esittely .text {
     flex: 2;
     color: rgb(0, 0, 0)
-
 }
+
+
+.esittely2{
+    padding: 2%;
+    display: flex;
+}
+
+div.esittely2{
+    text-align: left;  
+}
+
+.esittely2 .text {
+    flex: 2;
+    color: rgb(0, 0, 0)
+}
+
 
 /* Kaksi saraketta */
 .columns {
     display: flex;
-    padding: 20px;
+    padding: 40px;
+    gap: 50px;
 }
 
 .columns .column {
     flex: 1;
 }
 
-/* Alareunan palkki */
+
+
+
+
+
+/*--------puheterapia-sivu---------*/
+
+.puheterapia-content {
+    padding: 50px;  /* Lisää tilaa kaikille reunoille */
+    width: 100%;    /* Leveys mukautuu näytön leveyteen */
+    max-width: 800px; /* Enimmäisleveys 800px */
+    margin: auto;  /* Keskittää sisällön */
+    box-sizing: border-box; /* Varmistaa, että padding otetaan huomioon kokonaisleveyden laskennassa */
+}
+
+
+.puheterapia-content .text {
+    flex: 2;
+    color: rgb(0, 0, 0)
+    text-align: left;
+
+}
+
+.puheterapia-content .text li {
+    list-style: none;
+}
+
+
+/*--------koulutukset-sivu---------*/
+
+.koulutukset-content {
+    padding: 50px;  /* Lisää tilaa kaikille reunoille */
+    width: 100%;    /* Leveys mukautuu näytön leveyteen */
+    max-width: 800px; /* Enimmäisleveys 800px */
+    margin: auto;  /* Keskittää sisällön */
+    box-sizing: border-box; /* Varmistaa, että padding otetaan huomioon kokonaisleveyden laskennassa */
+}
+
+
+
+.koulutukset-content .text {
+    flex: 2;
+    color: rgb(0, 0, 0)
+    text-align: left;
+
+}
+
+.koulutukset-content .text li {
+    list-style: none;
+}
+
+
+
+/*------------------------------------------------------*/
+/*                      FOOTER                          */
+/*------------------------------------------------------*/
+
 .footer {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -106,14 +222,16 @@ div.main-content{
     justify-content: space-between;
     align-items: center;
     margin-top: auto; /* Tämä varmistaa, että palkki menee alas */
+    position: relative; /* Tarvitaan, jotta absolute toimii sisällä */
+    
 }
+
 
 /* Alimman palkin kuvat */
 .footer .images {
     gap: 10px;
     vertical-align: middle;
 }
-
 
 /* Teksti alimman palkin oikealla puolella */
 .footer .text {
@@ -122,7 +240,6 @@ div.main-content{
     flex: 1;
     gap: 20px;
     color: rgb(0, 9, 139);
-    
 }
 
 /* Tekstit vierekkäin */
@@ -130,22 +247,48 @@ div.main-content{
     margin: 0;
     align-self: flex-end;
 }
-ul. {
-    list style: none;
-}
+
 ul.bottom-info {
     list-style: none;
-    font-size: 16px;      /* Isompi fonttikoko */
-    line-height: 1.2;     /* Lisää riviväliä */
-    padding: 0;           /* Poistaa oletustäytteet */
-    margin: 0;            /* Poistaa oletusmarginaalit */
-    padding-left: 25px;   /* Lisää tilaa vasemmalta */
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 0;
+    margin: 0;
+    padding-left: 25px;
 }
 
 ul.bottom-info li {
-    margin-bottom: 10px;  /* Lisää tilaa listan kohteiden väliin */
+    margin-bottom: 10px;
 }
 
+
+ul.security-info {
+    list-style: none;
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 0;
+    margin: 0;
+    padding-left: 25px;
+}
+
+ul.security-info li{
+    margin-top: 10px;
+    list-style: none;
+}
+
+
+
+/* logojen tyyli */
+.logo-image {
+    width: 200px;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+/*------------------------------------------------------*/
+/*                      TYYLIT                          */
+/*------------------------------------------------------*/
 a {
     color: #3498db; /* Linkin väri */
     text-decoration: none; /* Poistetaan alleviivaus */
@@ -158,21 +301,208 @@ a:hover {
     text-decoration: underline; /* Alaviiva näkyviin */
 }
 
+.a2 {
+    color: #000000; /* Linkin väri */
+    text-decoration: underline; /* Poistetaan alleviivaus */
+    font-size: 20px;
+    
+}
+
+.a2:hover {
+    color: #e74c3c; /* Väri muuttuu */
+    text-decoration: none; /* Alaviiva näkyviin */
+}
+
+.a3 {
+    color: #18272F;
+    position: relative;
+    text-decoration: none;
+  }
+  
+.a3::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+.a3:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
 h1 {
     text-align: center;
+    font-size: 34px;
 }
+
+h2 {
+    text-align: center;
+    padding-bottom: -40px;
+    font-size: 34px;
+}
+
+h3 {
+    text-align: left;
+    padding-bottom: px;
+    font-size: 20px;
+}
+
+
 
 p {
-    font-size: 22px; /* Kasvatettu fonttikoko */
+    font-size: 22px; 
 }
 
 
-.scrollable-box {
-    width: 100%;          /* Voit asettaa sopivan leveyden */
-    max-width: auto;     /* Esimerkiksi enintään 600px leveä */
-    height: 280px;        /* Kiinteä korkeus */
-    overflow-y: auto;     /* Näyttää pystysuoran rullapalkin tarpeen mukaan */
-    padding: 10px;        /* Sisäistä tilaa tekstille */
-    border: 1px solid #ccc; /* Kehyksen väri */
-    background-color: #fff; /* Taustaväri */
+
+/*------------------------------------------------------*/
+/*              Mobiiliversion                          */
+/*------------------------------------------------------*/
+
+/*------------header-----------*/
+
+@media (max-width: 768px) {
+    
+    .nav-links {
+        display: none; /* Piilotetaan normaalit linkit */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: white;
+        width: 200px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        padding: 10px;
+    }
+
+    .nav-links.active {
+        display: flex; /* Näytetään valikko */
+    }
+
+    .hamburger-menu {
+        display: flex; /* Näytetään hampurilaisvalikko */
+    }
+
+    .esittely {
+        flex-direction: column; /* Stack content vertically */
+        text-align: center; /* Center the content */
+    }
+
+    .face-image{
+        display: none;
+    }
+
+    .esittely h1 {
+        display: none; /* Piilottaa otsikon mobiililaitteilla */
+    }
+
+    .header{
+        display: none;
+    }
+
+    
+
 }
+
+@media (min-width: 768px) {
+
+    .topnav{
+         display: none;
+    }
+
+    .face-image-mobile{
+        display: none;
+    }
+}
+
+
+
+/*------------------------------------------------------*/
+/*                  kapeempi footer                     */
+/*------------------------------------------------------*/
+
+@media (max-width: 1094px) {   
+    .security-info {
+        display: none;
+    }
+}
+
+@media (min-width: 1094px) {   
+    .security-narrow {
+        display: none;
+    }
+}
+
+
+
+
+/*------------------------------------------------------*/
+/*                Mobiiliversion header                 */
+/*------------------------------------------------------*/
+
+
+.mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav p {
+    text-align: center;  
+    font-size: 26px;     
+    font-weight: bold;    
+    margin: 10px 0;      
+  }
+  
+  .topnav a {
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: rgb(255, 255, 255);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 26px; 
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+
+
