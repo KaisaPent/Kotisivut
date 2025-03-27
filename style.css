@@ -114,6 +114,15 @@ body {
     margin-top: 20px;
     margin-right:20px;
 }
+
+.map-mobile{
+    width: 350px;
+    height: auto;
+    margin-top: 20px;
+    
+}
+
+
 /* Wrapper for content to limit width */
 .content-wrapper {
     max-width: 1100px;
@@ -476,6 +485,9 @@ p {
     }
 
     .paikkatilanne-mobiili{
+        display: none;
+    }
+    .map-mobile{
         display: none;
     }
 }
