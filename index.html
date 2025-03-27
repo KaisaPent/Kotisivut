@@ -6,80 +6,105 @@
     <title>Etusivu</title>
     <!-- Linkki ulkoiseen CSS-tiedostoon -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-    <!-- Yläreunan palkki -->
+    <!-- Header -->
     <div class="header">
         <div class="left"></div>
         <div class="right">
             <li><a href="index.html">Kotisivu</a></li>
-            <li><a href="page1.html">Puheterapia</a></li>
-            <li><a href="page2.html">Lisäkoulutukseni</a></li>
+            <li><a href="page2.html">Puheterapia</a></li>
+            <li><a href="page1.html">Lisäkoulutukseni</a></li>
         </div>
     </div>
 
+    <div class="topnav">
+        <p> T:mi Puheterapeutti Kaisa Penttilä </p>
+        <div id="myLinks">
+          <a href="index.html">Kotisivu</a>
+          <a href="page2.html">Puheterapia</a>
+          <a href="page1.html">Lisäkoulutukseni</a>         
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+      
+
+      
     <!-- Pääsisältö -->
-    <div class="main-content">
-        <div class="image">
-            <img src="k1.jpg" alt="Kuva" class="face-image">
-        </div>
-        <div class="text">
-            <h1>T:mi Puheterapeutti Kaisa Penttilä</h1>
-            <p>
-                Olen koulutukseltani Filosofian maisteri. Olen valmistunut Oulun yliopistosta, logopedian
-                koulutusohjelmasta vuonna 2005. Lisäksi olen sisätautikirurginen sairaanhoitaja,
-                valmistunut Oulun Ammattikorkeakoulusta vuonna 1996. Olen työskennellyt
-                puheterapeuttina noin 20 vuotta. Toimin yksityisenä ammatinharjoittajana.
-            </p>
-            <p>   
-                Erityisosaamisalueitani ovat puhetta tukevien – ja korvaavien kommunikointimenetelmien
-                käytön ohjaaminen ja kommunikointisovellusten sisällön muokkaaminen, varhaisen
-                vuorovaikutuksen ongelmat, viivästynyt puheen- ja kielenkehitys, puheen- ja
-                kielenkehityksen erityisvaikeus, artikulaatiovaikeudet ja äännevirheet, kehitysvammaan
-                liittyvät puheen-, kielen- ja kommunikaation erilaiset haasteet, neurologisten sairauksien
-                tai aivovamman aiheuttamat puheen ongelmat ja neuropsykiatriset häiriöt.
-            </p>
-            <p>    
-                Teen työtä vahvan ammattitaidon pohjalta asiakaslähtöisesti jokaista asiakasta ja hänen
-                läheisiään kunnioittaen ja jokaisen elämäntilanteen huomioon ottaen. Lisäksi
-                puheterapeuttina työtäni ohjaavat terveydenhuoltoa koskevat lait- ja asetukset, Kelan
-                standardi ja säännöllinen työni laadun arviointi. Osaamistani puheterapeuttina olen
-                halunnut kehittää koko työurani ajan ja olen käynyt lukuisia puheterapia-alan
-                lisäkoulutuksia. Alla esimerkkejä käymistäni lisäkoulutuksista:
-            </p>
+    <div class="content-wrapper">   
+        <div class="esittely">
+            <div class="image">
+                <img src="k1.jpg" alt="Kuva" class="face-image">
+                <img src="k1.jpg" alt="Kuva" class="face-image-mobile">
+            </div>
+            <div class="text">
+                <h1>T:mi Puheterapeutti Kaisa Penttilä</h1>
+                <p>
+                    Olen koulutukseltani Filosofian maisteri. Olen valmistunut Oulun yliopistosta, logopedian
+                    koulutusohjelmasta vuonna 2005. Lisäksi olen sisätautikirurginen sairaanhoitaja,
+                    valmistunut Oulun Ammattikorkeakoulusta vuonna 1996. Olen työskennellyt
+                    puheterapeuttina noin 20 vuotta. Toimin yksityisenä ammatinharjoittajana.
+                </p>
+            </div>
+        </div>    
+        <div class="esittely2">      
+            <div class="text">   
+                <p>   
+                    Erityisosaamisalueitani ovat puhetta tukevien – ja korvaavien kommunikointimenetelmien
+                    käytön ohjaaminen ja kommunikointisovellusten sisällön muokkaaminen, varhaisen
+                    vuorovaikutuksen ongelmat, viivästynyt puheen- ja kielenkehitys, puheen- ja
+                    kielenkehityksen erityisvaikeus, artikulaatiovaikeudet ja äännevirheet, kehitysvammaan
+                    liittyvät puheen-, kielen- ja kommunikaation erilaiset haasteet, neurologisten sairauksien
+                    tai aivovamman aiheuttamat puheen ongelmat ja neuropsykiatriset häiriöt.
+                </p>
+                <p>    
+                    Teen työtä vahvan ammattitaidon pohjalta asiakaslähtöisesti jokaista asiakasta ja hänen
+                    läheisiään kunnioittaen ja jokaisen elämäntilanteen huomioon ottaen. Lisäksi
+                    puheterapeuttina työtäni ohjaavat terveydenhuoltoa koskevat lait- ja asetukset, Kelan
+                    standardi ja säännöllinen työni laadun arviointi. Osaamistani puheterapeuttina olen
+                    halunnut kehittää koko työurani ajan ja olen käynyt lukuisia puheterapia-alan
+                    lisäkoulutuksia. Alla esimerkkejä käymistäni lisäkoulutuksista:
+                </p>
 
-        </div>
-    </div>
-
-    <!-- Kaksi saraketta -->
-    <div class="columns">
-        <div class="column">
-            <h2>Puheterapia asiakkaat</h2>
-            <p>
-                Kuntoutan Kelan vaativan lääkinnällisen kuntoutuksen puheterapia-asiakkaita,
-                perusterveydenhuollon asiakkaita sekä itse kuntoutuksen maksavia asiakkaita ja
-                vakuutusyhtiön kautta tulevia asiakkaita. Puheterapiakuntoutus toteutetaan asiakkaan
-                toiveiden ja tarpeiden mukaan joko vastaanotolla tai kotikäynteinä asiakkaan kotona,
-                lapsen päiväkodissa, lapsen ja nuoren koulussa tai tuetuissa asumisyksiöissä.
-            </p>
-            <p>   
-                Toiminta-alue: Oulu, Ii, Muhos, Utajärvi, Tyrnävä, Kempele, Liminka, Lumijoki, Siikalatva,
-                Kärsämäki, Pyhäjärvi, Haapajärvi, Nivala, Haapavesi, Ylivieska, Oulainen
-            </p>
-            <p>
-                Paikkatilanne: Tällä hetkellä mahtuu asiakkaita (päivitetty 7.3.2025)
-            </p>
-        </div>
-        <div class="column">
-            <h2>Lisäkoulutukset</h2>
-            <div class="scrollable-box">
-                
             </div>
         </div>
+
+        <div>
+            <h2>Asiakkaat</h2>
+        </div>
+
+        <div class="columns">
+            
+            <div class="column">
+                <p>
+                    Kuntoutan Kelan vaativan lääkinnällisen kuntoutuksen puheterapia-asiakkaita,
+                    perusterveydenhuollon asiakkaita sekä itse kuntoutuksen maksavia asiakkaita ja
+                    vakuutusyhtiön kautta tulevia asiakkaita. Puheterapiakuntoutus toteutetaan asiakkaan
+                    toiveiden ja tarpeiden mukaan joko vastaanotolla tai kotikäynteinä asiakkaan kotona,
+                    lapsen päiväkodissa, lapsen ja nuoren koulussa tai tuetuissa asumisyksiöissä.
+                </p>
+                
+            </div>
+            <div class="column">
+                <p>   
+                    Toiminta-alue: Oulu, Ii, Muhos, Utajärvi, Tyrnävä, Kempele, Liminka, Lumijoki, Siikalatva,
+                    Kärsämäki, Pyhäjärvi, Haapajärvi, Nivala, Haapavesi, Ylivieska, Oulainen
+                </p>
+                <p>
+                    Paikkatilanne: Tällä hetkellä mahtuu asiakkaita (päivitetty 7.3.2025)
+                </p>
+                    
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <!-- Alareunan palkki -->
+        <!-- Footer -->
     <div class="footer">
         <div class="images">
             <img src="kela.png" alt="Kuva 2" class="logo-image">
@@ -87,14 +112,32 @@
         </div>
         <div class="text">
             <ul class="bottom-info">
-                <li>0409673178 löpölöpö@gmail.com</li>
-                <li>Käyntiosoite: Vanhantullinkatu 2, 2 krs. ,90100 Oulu</li>
-                
-                <li>Paikkatilanne: Tällä hetkellä mahtuu asiakkaita (päivitetty 7.3.2025)</li>
+                <li>Käyntiosoite: Vanhantullinkatu 2, 2 krs., 90100 Oulu</li>
+                <li>Postiosoite Vanhantullinkatu 2, 90100 Oulu</li>
+                <li>kaisapentt@gmail.com</li>
+                <li>0505414862</li>
             </ul>
-            <p><a href="tietoturva.pdf" target="_blank">Tietoturvakausiseloste</a></p>
+            <!-- Uusi tietoturvailmoitus class -->
+            <ul class="security-info">
+                <li><a href="tietoturva.pdf" target="_blank">Tietoturvasuunnitelma</a></li>
+                <li><a href="tietosuojaseloste.pdf" target="_blank">Tietosuojaseloste</a></li>
+                <li><a href="tietoturva.pdf" target="_blank">Omavalvontasuunitelma</a></li>
+            </ul>
         </div>
     </div>
+
+<!-- javascript -->
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
 
 </body>
 </html>
