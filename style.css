@@ -109,7 +109,7 @@ body {
 }
 
 .map-image {
-    width: 250px;
+    width: 350px;
     height: auto;
     margin-top: 20px;
     margin-right:20px;
@@ -163,26 +163,44 @@ div.esittely2{
 }
 
 /* Kaksi saraketta */
-.columns {
+.toiminta-alue {
     display: flex;
     padding: 20px;
     gap: 50px;
 }
 
-.columns .column {
-    flex: 1;
+.asiakkaat{
+    display: flex;
+    padding-left: 20px;
 }
 
-.asiakkaat-mobiili {
+.toiminta-alue-mobiili {
     padding: 2%;
     display: flex;
 }
 
-div.asiakkaat-mobiili{
+.toiminta-alue-mobiili .text {
+    flex: 2;
+    color: rgb(0, 0, 0)
+}
+
+.toiminta-alue-mobiili .text ul {
+    list-style: none; /* Poistaa luettelomerkit */
+    padding-left: 0;  /* Poistaa sisennyksen */
+    margin-left: 0;   /* Poistaa mahdollisen lisätilan vasemmalta */
+}
+
+.toiminta-alue-mobiili .text li {
+    list-style: none;
+    font-size: 22px;
+}
+
+
+div.toiminta-alue-mobiili{
     text-align: left;  
 }
 
-.asiakkaat-mobiili .text {
+.toiminta-alue-mobiili .text {
     flex: 2;
     color: rgb(0, 0, 0)
 }
@@ -352,6 +370,20 @@ a:hover {
     text-decoration: none; 
 }
 
+.a4 {
+    color: #3498db; /* Linkin väri */
+    text-decoration: none; /* Poistetaan alleviivaus */
+    font-size: 60px;
+    padding: 20px;
+    
+}
+
+.a4:hover {
+    color: #e74c3c; 
+    text-decoration: underline; 
+}
+
+
 
 h1 {
     text-align: center;
@@ -423,7 +455,7 @@ p {
         display: none;
     }
 
-    .columns{
+    .toiminta-alue{
         display: none;
     }
 
@@ -439,7 +471,11 @@ p {
         display: none;
     }
 
-    .asiakkaat-mobiili{
+    .toiminta-alue-mobiili{
+        display: none;
+    }
+
+    .paikkatilanne-mobiili{
         display: none;
     }
 }
@@ -500,8 +536,9 @@ p {
   .topnav a {
     color: rgb(0, 0, 0);    
     text-decoration: none;
-    font-size: 17px;
+    font-size: 22px;
     display: block;
+    padding: 10px;
   }
   
   .topnav a.icon {
@@ -510,7 +547,7 @@ p {
     position: absolute;
     right: 0;
     top: 0;
-    font-size: 26px; 
+    font-size: 46px; 
   }
   
   .topnav a:hover {
