@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <!-- Yläreunan palkki -->
+    <!-- Header -->
     <div class="header">
         <div class="left"></div>
         <div class="right">
@@ -19,9 +19,21 @@
         </div>
     </div>
 
+    <div class="topnav">
+        <p> Etusivu </p>
+        <div id="myLinks">
+          <a href="index.html">Kotisivu</a>
+          <a href="page2.html">Puheterapia</a>
+          <a href="page1.html">Lisäkoulutukseni</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
 
     <!-- Pääsisältö -->
-    <div class="main-content">
+    <div class="puheterapia-content">
         <div class="text">
             <h1>Puheterapia</h1>
             <p>
@@ -55,32 +67,51 @@
                 lääkinnällisestä kuntoutuksesta saat alla olevista linkeistä:
             </p>
 
-            <ul>
-                <li><a href="https://www.kela.fi/kuntoutuspalvelut" target="_blank">Kelan kuntoutuspalvelut</a></li>
-                <li><a href="https://www.kela.fi/vaativa-laakinnallinen-kuntoutus" target="_blank">Vaativa lääkinnällinen kuntoutus</a></li>
-                <li><a href="https://www.kela.fi/vammaistuki-lapselle" target="_blank">Vammaistuki lapselle</a></li>
-            </ul>
+            
+            <p><a href="https://www.kela.fi/kuntoutuspalvelut" class="a2" target="_blank">Kelan kuntoutuspalvelut</a></p>
+            <p><a href="https://www.kela.fi/vaativa-laakinnallinen-kuntoutus" class="a2" target="_blank">Vaativa lääkinnällinen kuntoutus</a></p>
+            <p><a href="https://www.kela.fi/vammaistuki-lapselle" class="a2" target="_blank">Vammaistuki lapselle</a></p>
+            
 
 
         </div>
     </div>
 
-        <!-- Alareunan palkki -->
-        <div class="footer">
-            <div class="images">
-                <img src="kela.png" alt="Kuva 2" class="logo-image">
-                <img src="pohde.png" alt="Kuva 1" class="logo-image">
-            </div>
-            <div class="text">
-                <ul class="bottom-info">
-                    <li>0409673178 löpölöpö@gmail.com</li>
-                    <li>Käyntiosoite: Vanhantullinkatu 2, 2 krs. ,90100 Oulu</li>
-                    
-                    <li>Paikkatilanne: Tällä hetkellä mahtuu asiakkaita (päivitetty 7.3.2025)</li>
-                </ul>
-                <p><a href="tietoturva.pdf" target="_blank">Tietoturvakausiseloste</a></p>
-            </div>
+        <!-- Footer -->
+    <div class="footer">
+        <div class="images">
+            <img src="kela.png" alt="Kuva 2" class="logo-image">
+            <img src="pohde.png" alt="Kuva 1" class="logo-image">
         </div>
-    
+        <div class="text">
+            <ul class="bottom-info">
+                <li>Käyntiosoite: Vanhantullinkatu 2, 2 krs., 90100 Oulu</li>
+                <li>Postiosoite Vanhantullinkatu 2, 90100 Oulu</li>
+                <li>kaisapentt@gmail.com</li>
+                <li>0505414862</li>
+            </ul>
+            <!-- Uusi tietoturvailmoitus class -->
+            <ul class="security-info">
+                <li><a href="tietoturva.pdf" target="_blank">Tietoturvasuunnitelma</a></li>
+                <li><a href="tietosuojaseloste.pdf" target="_blank">Tietosuojaseloste</a></li>
+                <li><a href="tietoturva.pdf" target="_blank">Omavalvontasuunitelma</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- javascript -->
+
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+        x.style.display = "none";
+        } else {
+        x.style.display = "block";
+        }
+    }
+    </script>
+
+        
     </body>
     </html>
