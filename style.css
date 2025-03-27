@@ -319,45 +319,31 @@ a {
 }
 
 a:hover {
-    color: #e74c3c; /* Väri muuttuu */
-    text-decoration: underline; /* Alaviiva näkyviin */
+    color: #e74c3c; 
+    text-decoration: underline; 
 }
 
 .a2 {
-    color: #000000; /* Linkin väri */
-    text-decoration: underline; /* Poistetaan alleviivaus */
+    color: #000000; 
+    text-decoration: underline; 
     font-size: 20px;
     
 }
 
 .a2:hover {
-    color: #e74c3c; /* Väri muuttuu */
-    text-decoration: none; /* Alaviiva näkyviin */
+    color: #e74c3c; 
+    text-decoration: none; 
 }
 
 .a3 {
-    color: #18272F;
+    color: #000000;
     position: relative;
-    text-decoration: none;
+    text-decoration: underline;
   }
   
-.a3::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    border-radius: 4px;
-    background-color: #18272F;
-    bottom: 0;
-    left: 0;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .3s ease-in-out;
-}
-  
-.a3:hover::before {
-    transform-origin: left;
-    transform: scaleX(1);
+.a3:hover {
+    color: #e74c3c; 
+    text-decoration: none; 
 }
 
 
