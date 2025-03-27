@@ -151,6 +151,12 @@ div.esittely2{
     color: rgb(0, 0, 0)
 }
 
+.esittely2 .text ul {
+    list-style: none; /* Poistaa luettelomerkit */
+    padding-left: 0;  /* Poistaa sisennyksen */
+    margin-left: 0;   /* Poistaa mahdollisen lisätilan vasemmalta */
+}
+
 .esittely2 .text li {
     list-style: none;
     font-size: 22px;
@@ -159,7 +165,7 @@ div.esittely2{
 /* Kaksi saraketta */
 .columns {
     display: flex;
-    padding: 40px;
+    padding: 20px;
     gap: 50px;
 }
 
