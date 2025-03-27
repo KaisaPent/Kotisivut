@@ -56,6 +56,7 @@
        
        
         <div class="esittely2">      
+            
             <div class="text">   
                 <ul>   
                     <li>Erityisosaamisalueitani ovat:
@@ -78,16 +79,16 @@
                     halunnut kehittää koko työurani ajan ja olen käynyt lukuisia puheterapia-alan
                     <a href="lisäkoulutukset.html"class="a3">lisäkoulutuksia</a>.
                 </p>
-
             </div>
+
         </div>
 
         <div>
             <h2>Asiakkaat</h2>
         </div>
 
-        <div class="columns">
-            
+        <div class="asiakkaat"> 
+           
             <div class="text">
                 <p>
                     Kuntoutan Kelan vaativan lääkinnällisen kuntoutuksen puheterapia-asiakkaita,
@@ -95,48 +96,67 @@
                     vakuutusyhtiön kautta tulevia asiakkaita. Puheterapiakuntoutus toteutetaan asiakkaan
                     toiveiden ja tarpeiden mukaan joko vastaanotolla tai kotikäynteinä asiakkaan kotona,
                     lapsen päiväkodissa, lapsen ja nuoren koulussa tai tuetuissa asumisyksiöissä.
-                </p>
-                
+                </p>  
             </div>
+       
+        </div>
+
+
+        <div class="toiminta-alue">
             <div class="text">
                 <p>   
                     Toiminta-alue: Oulu, Ii, Muhos, Utajärvi, Tyrnävä, Kempele, Liminka, Lumijoki, Siikalatva,
                     Kärsämäki, Pyhäjärvi, Haapajärvi, Nivala, Haapavesi, Ylivieska, Oulainen
                 </p>
                 <p>
-                    Paikkatilanne: Tällä hetkellä mahtuu asiakkaita (päivitetty 7.3.2025)
-                </p>
-                    
-            </div>
+                    Paikkatilanne: <span id="content"></span>
+                </p>     
+            </div> 
             
+            <div class="image"> 
+                <img src="kartta.png" alt="Kuva" class="map-image">
+            </div>
         </div>
     
 
     
 
-        <div class="asiakkaat-mobiili">
+        <div class="toiminta-alue-mobiili">
             <div class="text">   
-                <p>
-                    Kuntoutan Kelan vaativan lääkinnällisen kuntoutuksen puheterapia-asiakkaita,
-                    perusterveydenhuollon asiakkaita sekä itse kuntoutuksen maksavia asiakkaita ja
-                    vakuutusyhtiön kautta tulevia asiakkaita. Puheterapiakuntoutus toteutetaan asiakkaan
-                    toiveiden ja tarpeiden mukaan joko vastaanotolla tai kotikäynteinä asiakkaan kotona,
-                    lapsen päiväkodissa, lapsen ja nuoren koulussa tai tuetuissa asumisyksiöissä.       
-                </p>
-            
                 <p>   
-                    Toiminta-alue: Oulu, Ii, Muhos, Utajärvi, Tyrnävä, Kempele, Liminka, Lumijoki, Siikalatva,
-                    Kärsämäki, Pyhäjärvi, Haapajärvi, Nivala, Haapavesi, Ylivieska, Oulainen
+                    Toiminta-alue:
                 </p>
+                <ul>   
+                    <li>Oulu
+                    <li>Ii
+                    <li>Muhos
+                    <li>Utajärvi
+                    <li> Tyrnävä
+                    <li>Kempele
+                    <li>Liminka
+                    <li>Siikalatva
+                    <li>Kärsämäki
+                    <li> Pyhäjärvi
+                    <li>Haapajärvi
+                    <li>Nivala
+                    <li>Haapavesi
+                    <li>Ylivieska
+                    <li>Oulainen  
+                </ul>
             </div>
+
+            <div class="image"> 
+                <img src="kartta.png" alt="Kuva" class="map-image">
+            </div>
+
         </div>
   
             
-        <div class="asiakkaat-mobiili">    
+        <div class="paikkatilanne-mobiili">    
             <div class="text">
                 <p>
-                    Paikkatilanne: Tällä hetkellä mahtuu asiakkaita (päivitetty 7.3.2025)
-                </p>
+                    Paikkatilanne: Tällä hetkellä mahtuu asiakkaita (päivitetty 28.3.2025)
+                </p>   
             </div>
         </div>
 
@@ -176,6 +196,12 @@
         x.style.display = "block";
       }
     }
+    
+    //asikastieto teksti tiedostosta
+    fetch('astilanne.txt')
+    .then(response => response.text())
+    .then(text => document.getElementById('content').innerText = text)
+    .catch(error => console.error('Virhe ladattaessa sisältöä:', error));
     </script>
 
 </body>
