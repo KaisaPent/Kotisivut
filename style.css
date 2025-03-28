@@ -137,18 +137,22 @@ body {
 }
 
 div.esittely{
-    text-align: left;  
+    text-align: left; 
+    background: rgb(255, 255, 255); 
 }
 
 .esittely .text {
     flex: 2;
     color: rgb(0, 0, 0)
+    
+    
 }
 
 
 .esittely2{
     padding: 2%;
     display: flex;
+    background: rgb(255, 255, 255); 
 }
 
 div.esittely2{
@@ -171,17 +175,19 @@ div.esittely2{
     font-size: 22px;
 }
 
-/* Kaksi saraketta */
+.asiakkaat{
+    display: flex;
+    padding-left: 20px;
+    background: rgb(255, 255, 255); 
+}
+
 .toiminta-alue {
     display: flex;
     padding: 20px;
     gap: 50px;
+    background: rgb(255, 255, 255); 
 }
 
-.asiakkaat{
-    display: flex;
-    padding-left: 20px;
-}
 
 .toiminta-alue-mobiili {
     padding: 2%;
