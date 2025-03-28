@@ -92,7 +92,7 @@ body {
 
 /*--------etusivu---------*/
 
-/* Naamakuva tyyli */
+/* kuvat */
 .face-image {
     width: 250px;
     height: auto;
@@ -121,7 +121,9 @@ body {
     width: 350px;
     height: auto;
     margin-top: 20px;
-    
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 
