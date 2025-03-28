@@ -1,13 +1,15 @@
 
 :root {
 
-    --lightblue:#68b1ff;
+    --lightblue:#90c6ff;
     --white:#fdfdfd; 
+    --background-color: var(--lightblue);
+    
 }
 
 /* Yleinen tyylitiedosto */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--lightblue);
@@ -125,7 +127,7 @@ body {
 
 /* Wrapper for content to limit width */
 .content-wrapper {
-    max-width: 1100px;
+    max-width: 900px;
     margin: 0 auto; /* Centers the content horizontally */
     padding: 0 20px; /* Optional: adds padding on the left and right for better spacing */
 }
@@ -138,7 +140,7 @@ body {
 
 div.esittely{
     text-align: left; 
-    background: rgb(255, 255, 255); 
+    background: var(--background-color); 
 }
 
 .esittely .text {
@@ -152,7 +154,7 @@ div.esittely{
 .esittely2{
     padding: 2%;
     display: flex;
-    background: rgb(255, 255, 255); 
+    background: var(--background-color); 
 }
 
 div.esittely2{
@@ -165,9 +167,9 @@ div.esittely2{
 }
 
 .esittely2 .text ul {
-    list-style: none; /* Poistaa luettelomerkit */
-    padding-left: 0;  /* Poistaa sisennyksen */
-    margin-left: 0;   /* Poistaa mahdollisen lisätilan vasemmalta */
+    list-style: none; 
+    padding-left: 0; 
+    margin-left: 0;   
 }
 
 .esittely2 .text li {
@@ -178,14 +180,27 @@ div.esittely2{
 .asiakkaat{
     display: flex;
     padding-left: 20px;
-    background: rgb(255, 255, 255); 
+    background: var(--background-color); 
 }
 
 .toiminta-alue {
     display: flex;
     padding: 20px;
     gap: 50px;
-    background: rgb(255, 255, 255); 
+    background: var(--background-color); 
+}
+
+.toiminta-alue .text ul {
+    list-style: none; 
+    padding-left: 0px;  
+    padding-top: 30px;
+    margin-left: 0;   
+}
+
+.toiminta-alue .text li {
+    list-style: none;
+    font-size: 22px;
+    padding-top: 10px;
 }
 
 
@@ -200,9 +215,9 @@ div.esittely2{
 }
 
 .toiminta-alue-mobiili .text ul {
-    list-style: none; /* Poistaa luettelomerkit */
-    padding-left: 0;  /* Poistaa sisennyksen */
-    margin-left: 0;   /* Poistaa mahdollisen lisätilan vasemmalta */
+    list-style: none; 
+    padding-left: 0;  
+    margin-left: 0;   
 }
 
 .toiminta-alue-mobiili .text li {
@@ -220,6 +235,16 @@ div.toiminta-alue-mobiili{
     color: rgb(0, 0, 0)
 }
 
+.paikkatilanne-mobiili {
+    padding: 2%;
+    padding-left: 30px;
+    display: flex;
+}
+
+.paikkatilanne-mobiili .text {
+    flex: 2;
+    color: rgb(0, 0, 0)
+}
 
 
 
@@ -228,9 +253,9 @@ div.toiminta-alue-mobiili{
 .puheterapia-content {
     padding: 50px;  /* Lisää tilaa kaikille reunoille */
     width: 100%;    /* Leveys mukautuu näytön leveyteen */
-    max-width: 800px; /* Enimmäisleveys 800px */
+    max-width: 900px; /* Enimmäisleveys 800px */
     margin: auto;  /* Keskittää sisällön */
-    box-sizing: border-box; /* Varmistaa, että padding otetaan huomioon kokonaisleveyden laskennassa */
+    box-sizing: border-box; 
 }
 
 
@@ -251,7 +276,7 @@ div.toiminta-alue-mobiili{
 .koulutukset-content {
     padding: 50px;  /* Lisää tilaa kaikille reunoille */
     width: 100%;    /* Leveys mukautuu näytön leveyteen */
-    max-width: 800px; /* Enimmäisleveys 800px */
+    max-width: 900px; /* Enimmäisleveys 800px */
     margin: auto;  /* Keskittää sisällön */
     box-sizing: border-box; /* Varmistaa, että padding otetaan huomioon kokonaisleveyden laskennassa */
 }
@@ -315,7 +340,7 @@ ul.bottom-info {
     line-height: 1.2;
     padding: 0;
     margin: 0;
-    padding-left: 25px;
+    padding-right: 25px;
 }
 
 ul.bottom-info li {
@@ -473,6 +498,7 @@ p {
     .toiminta-alue{
         display: none;
     }
+
 
 }
 
